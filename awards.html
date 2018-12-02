@@ -1,0 +1,231 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>     ADA-Australian design architects      </title>
+  
+  <meta name="author" content="      Vilaphon Bannavong ker.kasao@gmail.com      ">
+
+  <link rel="stylesheet" href="ada.css">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "Awards",
+      "About us",
+      "Apatments",
+      "Home",
+      "Portfolio",
+      "Ptojects",
+      "Contact us",
+      "Privacy",
+      "Building",
+      "Design",
+      
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+
+<body id="award">
+<div id="wrapper">
+
+<header>
+<a href="index.html"><img id="one" src="images/ada_new_logo.png" alt="ada_new_logo." width="300" height="180"></a>
+<div class="ui-widget">
+  <label for="tags">Search: </label>
+  <input id="tags">
+</div>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">HOME</a></li>
+<li><a href="about_us.html">ABOUT US</a></li>
+<li><a href="awards.html" id="current-page">AWARDS</a></li>
+<li><a href="Portfolio.html">PORTFOLIO</a></li>
+<li><a href="projects.html">PROJECTS</a></li>
+<li><a href="Contact_Us.html">CONTACT US</a></li>
+</ul>
+</nav>
+
+<main>
+
+<h1>Awards</h1>
+<div id="main-award">
+
+<div class="row">
+  <div class="columnout">
+    <img src="images/apart1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/apart2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/apart3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/house1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/house2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/house3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/house4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/Oscar_Apartments.gif" onclick="openModal();currentSlide(4)" class="hover-shadow" height="150" width="250">
+  </div>
+  <div class="columnout">
+    <img src="images/Pandara_Apartments.gif" onclick="openModal();currentSlide(4)" class="hover-shadow" height="150" width="250">
+  </div>
+ 
+    
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/apart1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/apart2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/apart3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/house1.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/house2.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/house3.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/house4.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/Oscar_Apartments.gif" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/Pandara_Apartments.gif" style="width:100%">
+    </div>
+	
+	 
+	
+	
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+	<div class="picin">
+    <div class="column">
+      <img class="demo" src="images/apart1.jpg" onclick="currentSlide(1)" alt="Blues Apartments Forestvillek"height="100" width="200">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/apart2.jpg" onclick="currentSlide(2)" alt="Blues The Paradise Apartments Potts Point"height="100" width="200">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/apart3.jpg" onclick="currentSlide(3)" alt="Beautiful Waters Apartments Coogee"height="100" width="200">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/house1.jpg" onclick="currentSlide(4)" alt="Victoria Street Apartments Kirribilli"height="100" width="200">
+    
+	</div>
+	
+	<div class="column">
+      <img class="demo" src="images/house2.jpg" onclick="currentSlide(5)" alt="Biltong Elizabeth Bay"height="100" width="200">
+    
+	</div>
+	
+	<div class="column">
+      <img class="demo" src="images/house3.jpg" onclick="currentSlide(6)" alt="The Watchhouse Sydney"height="100" width="200">
+    
+	</div>
+	
+	<div class="column">
+      <img class="demo" src="images/house4.jpg" onclick="currentSlide(7)" alt="Rainier House Putney"height="100" width="200">
+    
+	</div>
+	
+	<div class="column">
+      <img class="demo" src="images/Oscar_Apartments.gif" onclick="currentSlide(8)" alt="Oscar Apartments Camperdown"height="100" width="200">
+    
+	</div>
+	
+	<div class="column">
+      <img class="demo" src="images/Pandara_Apartments.gif" onclick="currentSlide(9)" alt="Pandara Apartments Potts Pointt"height="100" width="200">
+    
+	</div>
+	</div>
+  </div>
+</div>
+</div>
+
+</main>
+
+<footer>
+<ul>
+<li>&copy; Australian Design Architects</li>
+<li><a href="privacy.html">privacy</a></li>
+<li><a href="www.facebook.com"><img src="images/facebook.png" alt="facebook" width="30" height="30"></a></li>
+<li><a href="www.facebook.com"><img src="images/instagram.png" alt="facebook" width="30" height="30"></a></li>
+</ul>
+</footer>
+
+</div>
+<script src="js/js.js"></script>
+</body>
+</html> 
+
+
